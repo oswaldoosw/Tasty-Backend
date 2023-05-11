@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const UserDetailsSchema = new mongoose.Schema(
+const UserDetailsSchema = new Schema(
     {
         name:String,
         email:{ type:String, unique:true },
@@ -10,5 +11,4 @@ const UserDetailsSchema = new mongoose.Schema(
         collection: "UserInfo"
     }
 );
-
 mongoose.model("UserDetails", UserDetailsSchema);
