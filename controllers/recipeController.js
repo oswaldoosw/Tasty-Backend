@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-require("../models/RecipeDetails");
+require("../model/RecipeDetails");
 const Recipe = mongoose.model("RecipeDetails");
 
 const jsonwebtoken = require("jsonwebtoken");

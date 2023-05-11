@@ -1,7 +1,7 @@
 const bcryptjs = require("bcryptjs");
 const mongoose = require("mongoose");
 
-require("../models/UserDetails");
+require("../model/UserDetails");
 const User = mongoose.model("UserDetails");
 
 const jsonwebtoken = require("jsonwebtoken");
