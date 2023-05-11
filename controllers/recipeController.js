@@ -11,7 +11,7 @@ async function createRecipeComment (recipeid)
     await Recipe.create({
         recipeId: recipeid,
         rating: {
-            score: 0,
+            score:0,
             count: 0,
         },
     })
