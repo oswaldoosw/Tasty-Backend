@@ -34,4 +34,4 @@ const RecipeDetailsSchema = new mongoose.Schema(
     }
 );
 
-mongoose.model("RecipeDetails", RecipeDetailsSchema);
+module.exports = mongoose.model("RecipeDetails", RecipeDetailsSchema);
